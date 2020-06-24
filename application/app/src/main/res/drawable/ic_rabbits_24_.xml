@@ -1,0 +1,21 @@
+<!--
+  ~    Copyright 2018 Makoto Consulting Group, Inc
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<vector android:height="24dp" android:viewportHeight="512.003"
+    android:viewportWidth="512.003" android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FF000000" android:pathData="m36.56,337.142c-20.962,9.405 -35.515,30.465 -35.484,54.92 0.034,28.078 19.408,51.703 45.469,58.238 -3.451,-17.98 -23.376,-55.924 -9.985,-113.158z"/>
+    <path android:fillColor="#FF000000" android:pathData="m458.895,193.362 l-38.11,-27.74c-17.2,-84.68 -68.43,-125.26 -108.88,-144.43 -44.44,-21.07 -84.96,-21.23 -86.64,-21.19 -8.486,0.021 -15.317,7.115 -14.94,15.66 0.06,1.38 1.71,34.25 20.27,74.92 16.29,35.71 49.16,84.36 113.92,117.8 -4.36,23.76 -25.29,41.89 -50.33,41.94 -0.58,0.01 -59.35,0.29 -122.51,0.29 -78.051,0 -125.932,87.691 -104.65,162.17l25.24,88.34c1.84,6.44 7.73,10.88 14.42,10.88h166.08v-14c0,-11.53 -7.32,-21.72 -18.23,-25.37l-61.49,-20.55c-7.85,-2.62 -12.09,-11.11 -9.47,-18.96l11.03,-33.16c6.091,-18.293 -7.41,-37.32 -26.82,-37.32 -8.29,0 -15,-6.72 -15,-15 0,-8.29 6.71,-15 15,-15 39.7,0 67.894,38.871 55.29,76.79l-6.31,18.95 47.28,15.8c8.741,2.92 16.713,8.005 23.123,14.726 9.914,-3.083 19.614,-7.041 28.193,-11.096l-24.017,-66.5c-2.82,-7.8 1.22,-16.39 9.01,-19.21 7.79,-2.81 16.39,1.22 19.2,9.01l22.242,61.595c0.04,-0.03 0.085,-0.062 0.125,-0.092l25.094,69.483c2.146,5.943 7.788,9.904 14.108,9.904h32.104c9.601,0 16.743,-8.916 14.634,-18.291l-25.434,-113.09c10.977,-19.413 16.237,-45.029 16.237,-45.029l55.59,19.31c11.14,3.87 23.29,-1.67 27.66,-12.62 21.411,-53.659 3.731,-114.889 -43.019,-148.92z"/>
+</vector>

@@ -1,0 +1,28 @@
+<!--
+  ~    Copyright 2018 Makoto Consulting Group, Inc
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="m403.781,57.871h-54.828v-2.871c0,-30.328 -24.672,-55 -55,-55h-76.125c-30.328,0 -55,24.672 -55,55v2.871h-54.828c-16.566,0 -30,13.43 -30,30v22.867c0,5.523 4.477,10 10,10h335.781c5.523,0 10,-4.477 10,-10v-22.867c0,-16.57 -13.43,-30 -30,-30zM192.828,55c0,-13.785 11.215,-25 25,-25h76.125c13.785,0 25,11.215 25,25v2.871h-126.125zM192.828,55"/>
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="m90.949,150.738 l24.238,347.305c0.551,7.859 7.086,13.957 14.965,13.957h251.48c7.879,0 14.414,-6.098 14.961,-13.957l24.234,-347.305zM196.527,460.984c-0.215,0.012 -0.434,0.016 -0.648,0.016 -7.988,0 -14.633,-6.305 -14.973,-14.363l-10,-235c-0.355,-8.277 6.07,-15.273 14.348,-15.625 8.281,-0.34 15.273,6.074 15.625,14.352l10,235c0.352,8.277 -6.074,15.27 -14.352,15.621zM270.891,446c0,8.285 -6.715,15 -15,15s-15,-6.715 -15,-15v-235c0,-8.285 6.715,-15 15,-15s15,6.715 15,15zM330.879,446.637c-0.344,8.063 -6.988,14.363 -14.977,14.363 -0.215,0 -0.434,-0.004 -0.648,-0.012 -8.277,-0.352 -14.703,-7.348 -14.352,-15.625l10,-235c0.355,-8.277 7.359,-14.699 15.625,-14.348 8.277,0.352 14.703,7.344 14.352,15.621zM330.879,446.637"/>
+</vector>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~    Copyright 2018 Makoto Consulting Group, Inc
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.Medeina.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#FEDBD0"
+            android:paddingStart="12dp"
+            android:paddingLeft="12dp"
+            android:paddingEnd="12dp"
+            android:paddingRight="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_rabbits_24_"
+            app:title="@string/app_name">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="8dp"
+                app:srcCompat="@drawable/ic_trash_24" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/message"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_donation_24" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/filter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_trans_24" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/app_bar"
+            app:layout_constraintBottom_toTopOf="@id/card">
+
+            <LinearLayout
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/imageProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/Theme.Medeina"
+                    android:textSize="18sp"
+                    android:textColor="#262626"
+                    android:layout_marginLeft="10dp"
+                    android:text="Jeong Chaewon"
+                    android:textStyle="bold">
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/transactionColorDark"
+                        app:srcCompat="@drawable/ic_assignment_ind_24px"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/profileTypeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/Theme.Medeina"
+                        android:textSize="14sp"
+                        android:text="Single person household"
+                        android:layout_marginLeft="8dp">
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:srcCompat="@drawable/chaewon">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toBottomOf="@id/profileLayout"
+            app:layout_constraintBottom_toTopOf="@id/card2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/transactionLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@id/recordLayout">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/image1"
+                            app:srcCompat="@mipmap/ic_launcher_foreground"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/transaction"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp">
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/transaction"
+                            android:backgroundTint="#FFE3C4"
+                            android:textColor="#262626"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Transaction"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/image1"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:textSize="11dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/recordLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layout_constraintLeft_toLeftOf="@id/transactionLayout"
+                        app:layout_constraintRight_toRightOf="@id/donationLayout">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/chartImage"
+                            app:srcCompat="@drawable/pie_chart"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/chart"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp">
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/chart"
+                            android:backgroundTint="#FEDBD0"
+                            android:textColor="#262626"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Record"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/chartImage"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:textSize="11dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/donationLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layout_constraintLeft_toRightOf="@id/recordLayout"
+                        app:layout_constraintRight_toRightOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/heartImage"
+                            app:srcCompat="@drawable/heart"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintBottom_toTopOf="@id/donation"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp">
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/donation"
+                            android:backgroundTint="#FFC4D0"
+                            android:textColor="#262626"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:text="Donation"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/heartImage"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:textSize="11dp"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="8dp"
+            app:layout_constraintTop_toBottomOf="@id/card"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/gradient">
+
+                <TextView
+                    android:id="@+id/throwing"
+                    android:textColor="#262626"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:textAppearance="@style/TextAppearance.Medina.Description"
+                    android:text="Discharge Card"
+                    android:textSize="18dp"
+                    android:fontFamily="@string/common_google_play_services_wear_update_text"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/qrcode"></androidx.appcompat.widget.AppCompatImageView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/throwing"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/throwing"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="name:"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#3D3837"
+                            android:textSize="14dp" />
+
+
+                        <TextView
+                            android:id="@+id/discharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/throwing"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@id/name"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="Jeong Chaewon"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#262626"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/name"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="type:"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#3D3837"
+                            android:textSize="14dp" />
+
+
+                        <TextView
+                            android:id="@+id/typeName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/discharge"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@id/name"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="SIngle Person household"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#262626"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/type"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="address:"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#3D3837"
+                            android:textSize="14dp" />
+
+
+                        <TextView
+                            android:id="@+id/addressName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/typeName"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@id/name"
+                            android:width="140dp"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="10-12, Ogeum-ro 16-gil, Songpa-gu, Seoul"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#262626"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/waste"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/addressName"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="total waste:"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#3D3837"
+                            android:textSize="14dp" />
+
+
+                        <TextView
+                            android:id="@+id/wasteAmount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/addressName"
+                            android:layout_marginLeft="16dp"
+                            android:layout_toRightOf="@id/waste"
+                            android:width="160dp"
+                            android:fontFamily="@string/common_google_play_services_wear_update_text"
+                            android:text="13.1kg / 41kg"
+                            android:textAppearance="@style/TextAppearance.Medina.Description"
+                            android:textColor="#262626"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

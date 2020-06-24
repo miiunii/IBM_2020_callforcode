@@ -1,0 +1,149 @@
+<!--
+  ~    Copyright 2018 Makoto Consulting Group, Inc
+  ~
+  ~    Licensed under the Apache License, Version 2.0 (the "License");
+  ~    you may not use this file except in compliance with the License.
+  ~    You may obtain a copy of the License at
+  ~
+  ~        http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~    Unless required by applicable law or agreed to in writing, software
+  ~    distributed under the License is distributed on an "AS IS" BASIS,
+  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~    See the License for the specific language governing permissions and
+  ~    limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">Medeina</string>
+    <string name="title_home">Settings</string>
+    <string name="title_dashboard">Device Dashboard</string>
+    <string name="title_notifications">Messages</string>
+    <string name="title_notifications_long">Device Notification Messages (newest first):</string>
+    <string name="title_settings">App Settings</string>
+    <string name="home_id">Home ID</string>
+    <string name="your_assigned_system_id">Your assigned system ID</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="org_id">Org ID</string>
+    <string name="device_type">Home Controller Device Type</string>
+    <string name="device_id">Home Controller Device ID</string>
+    <string name="api_key">API Key</string>
+    <string name="auth_token">Auth Token</string>
+    <string name="connect">Connect</string>
+    <string name="error_application_client_not_connected">ApplicationClient is not connected. Check
+        your settings and try again.
+    </string>
+    <string name="connection_status">Connection Status:</string>
+    <string name="title_message_log">Message Log</string>
+    <string name="connection_status_not_connected">Connection Status: Not Connected</string>
+    <string name="connection_status_connected">Connection Status: Connected</string>
+    <string name="title_select_action">Select Action</string>
+    <string name="disconnect">Disconnect</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_debug_title">Debug Settings</string>
+    <string name="pref_show_toasts">Show Toasts?</string>
+    <string name="pref_show_toasts_summary">Shows selected Toast messages to show you what is going
+        on in the code
+    </string>
+    <string name="pref_mqtt_title">MQTT Server Settings</string>
+    <string name="pref_summary_mqtt_host_name">MQTT Server Host Name</string>
+    <string name="pref_title_mqtt_host_name">Host Name</string>
+    <string name="default_mqtt_host_name">messaging.internetofthings.ibmcloud.com</string>
+    <string name="pref_summary_mqtt_protocol">The protocol to use when communicating with the MQTT
+        server
+    </string>
+    <string name="pref_title_mqtt_protocol">Protocol</string>
+    <string name="default_mqtt_protocol">ssl</string>
+    <string name="pref_summary_mqtt_host_port">The port to use when communicating with the MQTT
+        server host
+    </string>
+    <string name="pref_title_mqtt_host_port">Port number</string>
+    <string name="default_mqtt_host_port">8883</string>
+    <string name="default_max_notifications">100</string>
+    <string name="pref_title_max_notifications">Max number of notifications</string>
+    <string name="pref_summary_max_notifications">The maximum number of notifications to keep in the
+        Notifications view
+    </string>
+
+    <string name="app_description"> Food Waste Disposal Rights Management App</string>
+    <string name="medeina_hint_username">Username</string>
+    <string name="medeina_hint_password">Password</string>
+    <string name="medeina_button_next">Next</string>
+    <string name="medeina_button_cancel">Cancel</string>
+</resources>
